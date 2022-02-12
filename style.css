@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  height: auto;
+}
+
+/* HEADER TEXT */
+
+main h1 {
+  width: 761px;
+  padding: 90px 20px 48px;
+  font-size: 40px;
+  line-height: 56px;
+}
+
+/* GRID BOX */
+
+.grid-text {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding-top: 10px;
+  padding-bottom: 70px;
+}
+
+/* GRID BOX COlOURS */
+
+.grid1 {
+  background-color: #ffdd00;
+  display: flex;
+  flex-direction: column;
+  border-radius: 9px;
+  padding: 45px;
+}
+.grid2 {
+  background-color: violet;
+  display: flex;
+  flex-direction: column;
+  border-radius: 9px;
+  padding: 45px;
+}
+.grid3 {
+  background-color: #00897b;
+  display: flex;
+  flex-direction: column;
+  border-radius: 9px;
+  padding: 45px;
+}
+
+/* INSIDE GRID TEXT STYLING */
+
+.grid1 p {
+  line-height: 1.7em;
+  font-size: 20px;
+}
+
+.grid2 p,
+.grid3 p {
+  line-height: 1.7em;
+  font-size: 20px;
+  color: white;
+}
+
+.grid1 h3 {
+  padding-bottom: 18px;
+  font-size: 25px;
+}
+.grid2 h3,
+.grid3 h3 {
+  padding-bottom: 18px;
+  font-size: 25px;
+  color: white;
+}
+
+.year {
+  color: rgb(128, 122, 122);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+section h2 {
+  padding-top: 18px;
+}
+
+section h3 {
+  padding-top: 18px;
+  font-size: 35px;
+}
+
+section p {
+  padding-top: 20px;
+  font-size: 23px;
+  line-height: 1.6em;
+}
+
+.table1,
+.table2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 470px;
+  width: 450px;
+  border-style:ridge;
+  border-radius: 10px;
+}
+
+.chart1 {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  gap: 40px;
+}
+
+img {
+  width: 350px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.table1 h3,
+.table2 h3 {
+  font-size: 24px;
+  align-items: center;
+}
+
+/*FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 9vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 25px;
+  color: gray;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 500px) {
+  .grid-text {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .chart1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section1-infos h1 {
+    font-size: 30px;
+  }
+  .grid1 p,
+  .grid2 p,
+  .grid3 p {
+    font-size: 15px;
+  }
+
+  .grid1 h3,
+  .grid2 h3,
+  .grid3 h3 {
+    font-size: 16px;
+  }
+}
